@@ -1,0 +1,1 @@
+{"OrderRequest":{"ExternalOrderId":"00003223@rijkzwaan-brazil","SalesOffice":"RBR","CustomerId":"5525221","OrderDetails":"JSON data"}}
