@@ -2,13 +2,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace OrderIntakeService
+namespace OrderProcessingDashboard
 {
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            Console.Title = "OrderIntakeService";
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -25,10 +24,10 @@ namespace OrderIntakeService
                     // TODO: consider moving common endpoint configuration into a shared project
                     // for use by all endpoints in the system
 
-                    var endpointConfiguration = new EndpointConfiguration("OrderIntakeService");
+                    var endpointConfiguration = new EndpointConfiguration("OrderProcessingDashboard");
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
-                    var routing = endpointConfiguration.UseTransport(new LearningTransport());                    
+                    var routing = endpointConfiguration.UseTransport(new LearningTransport());
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing
                     // routing.RouteToEndpoint(typeof(MessageType), "DestinationEndpointForType");
@@ -48,7 +47,7 @@ namespace OrderIntakeService
 
                     return endpointConfiguration;
                 })
-                .ConfigureServices(c => c.AddSingleton<OrderRepository>()); ;
+                .ConfigureServices(c => c.AddHostedService<DashboardConsole>());
         }
 
         static async Task OnCriticalError(ICriticalErrorContext context, CancellationToken cancellationToken)
