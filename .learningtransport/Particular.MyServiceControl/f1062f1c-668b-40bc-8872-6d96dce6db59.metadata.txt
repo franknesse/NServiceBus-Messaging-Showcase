@@ -1,0 +1,7 @@
+{
+  "NServiceBus.EnclosedMessageTypes": "ServiceControl.Plugin.Heartbeat.Messages.RegisterEndpointStartup",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ReplyToAddress": "OrderProcessingDashboard",
+  "NServiceBus.Transport.Learning.TimeToBeReceived": "00:00:40"
+}

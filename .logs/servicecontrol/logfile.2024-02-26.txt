@@ -1,0 +1,41 @@
+2024-02-26 15:48:47.5424|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-26.txt with LogLevel 'Info'
+2024-02-26 15:48:47.8157|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-26 15:48:49.2182|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-26 15:48:50.2275|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-26 15:48:50.6811|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-26 15:51:37.4612|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-26.txt with LogLevel 'Info'
+2024-02-26 15:51:37.5820|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-26 15:51:38.1285|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-26 15:51:38.7416|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-26 15:51:38.8931|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-26 15:52:39.9351|25|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2024-02-26 15:52:39.9351|25|Info|ServiceControl.Persistence.RavenDB.EmbeddedDatabase|
+-------------------------------------------------------------
+Database Size:                      -1 B
+Database Folder Size:                b
+RavenDB Logging Level:              Operations
+-------------------------------------------------------------
+2024-02-26 15:52:39.9351|25|Info|ServiceControl.Persistence.RavenDB.EmbeddedDatabase|Loading RavenDB license from C:\Users\fn\source\repos\MessagingShowcase\Monitoring\bin\Debug\net7.0\platform\servicecontrol\servicecontrol-instance\RavenLicense.json
+2024-02-26 15:52:40.2986|10|Info|NServiceBus.LearningTransportMessagePump|Dropping message '1ff4457e-f849-4d73-9486-ed5578a8e024' as the specified TimeToBeReceived of '00:00:20' expired since sending the message at '2024-02-26T14:52:00.0355665Z'. Current UTC time is '2024-02-26T14:52:40.2895953Z'
+2024-02-26 15:52:40.3058|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '5e48243f-5c98-487f-9d50-ec51e1a21ddc' as the specified TimeToBeReceived of '00:00:20' expired since sending the message at '2024-02-26T14:51:55.0147912Z'. Current UTC time is '2024-02-26T14:52:40.2993357Z'
+2024-02-26 15:52:40.3058|13|Info|NServiceBus.LearningTransportMessagePump|Dropping message '108a1620-d3cd-4875-9d57-b80786daeb3f' as the specified TimeToBeReceived of '00:00:20' expired since sending the message at '2024-02-26T14:52:10.0606993Z'. Current UTC time is '2024-02-26T14:52:40.2895953Z'
+2024-02-26 15:52:40.3539|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '95dd408c-afe9-45aa-8766-3ebef97b8949' as the specified TimeToBeReceived of '00:00:20' expired since sending the message at '2024-02-26T14:52:05.0409376Z'. Current UTC time is '2024-02-26T14:52:40.3362227Z'
+2024-02-26 15:52:40.3843|29|Info|NServiceBus.LearningTransportMessagePump|Dropping message '9d4e2286-abc5-4370-84b8-69ae6ac8786a' as the specified TimeToBeReceived of '00:00:20' expired since sending the message at '2024-02-26T14:51:50.0000218Z'. Current UTC time is '2024-02-26T14:52:40.3677906Z'

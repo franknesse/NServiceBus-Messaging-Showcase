@@ -1,0 +1,36 @@
+2024-02-26 15:48:48.4218|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-26.txt with LogLevel 'Info'
+2024-02-26 15:48:48.5305|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-26 15:48:50.1984|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-26 15:48:50.3141|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-26 15:48:50.5321|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-26 15:51:37.5590|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-26.txt with LogLevel 'Info'
+2024-02-26 15:51:37.7232|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-26 15:51:38.4810|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-26 15:51:38.5017|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-26 15:51:38.5620|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-26 15:51:44.5713|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2024-02-26 15:51:44.8977|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure starting
+2024-02-26 15:51:44.9279|11|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2024-02-26 15:51:44.9421|11|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2024-02-26 15:51:45.0001|11|Info|ServiceControl.Audit.Auditing.AuditIngestion|Ensure started. Infrastructure started
+2024-02-26 15:51:45.0946|5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-02-26 15:51:45.1020|5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2024-02-26 15:51:45.1020|5|Info|Microsoft.Hosting.Lifetime|Content root path: C:\Users\fn\source\repos\MessagingShowcase\Monitoring\bin\Debug\net7.0\platform\servicecontrol\servicecontrol-audit-instance\

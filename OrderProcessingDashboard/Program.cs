@@ -51,6 +51,27 @@ namespace OrderProcessingDashboard
                     // https://docs.particular.net/nservicebus/operations/installers
                     endpointConfiguration.EnableInstallers();
 
+                    var servicePlatformConnection = ServicePlatformConnectionConfiguration.Parse(@"{
+    ""heartbeats"": {
+        ""Enabled"": true,
+        ""HeartbeatsQueue"": ""Particular.MyServiceControl"",
+        ""Frequency"": ""00:00:10"",
+        ""TimeToLive"": ""00:00:40""
+    },
+    ""customChecks"": {
+        ""Enabled"": true,
+        ""CustomChecksQueue"": ""Particular.MyServiceControl""
+    },
+    ""errorQueue"": ""error"",
+    ""metrics"": {
+        ""Enabled"": true,
+        ""MetricsQueue"": ""Particular.Monitoring"",
+        ""Interval"": ""00:00:01""
+    }
+}");
+
+                    endpointConfiguration.ConnectToServicePlatform(servicePlatformConnection);
+
                     return endpointConfiguration;
                 })
                 .ConfigureServices(c => c.AddHostedService<DashboardConsole>());
