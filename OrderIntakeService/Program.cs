@@ -1,6 +1,9 @@
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OrderIntakeService.Repos;
+using OrderIntakeService.Services;
 
 namespace OrderIntakeService
 {
@@ -28,7 +31,7 @@ namespace OrderIntakeService
                     var endpointConfiguration = new EndpointConfiguration("OrderIntakeService");
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
-                    var routing = endpointConfiguration.UseTransport(new LearningTransport());                    
+                    var routing = endpointConfiguration.UseTransport(new LearningTransport());
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing
                     // routing.RouteToEndpoint(typeof(MessageType), "DestinationEndpointForType");
@@ -48,7 +51,9 @@ namespace OrderIntakeService
 
                     return endpointConfiguration;
                 })
-                .ConfigureServices(c => c.AddSingleton<OrderRepository>()); ;
+                .ConfigureServices(c => c.AddSingleton<OrderRepository>())
+                .ConfigureServices(c => c.AddHostedService<ProcessSchedule>());
+                
         }
 
         static async Task OnCriticalError(ICriticalErrorContext context, CancellationToken cancellationToken)

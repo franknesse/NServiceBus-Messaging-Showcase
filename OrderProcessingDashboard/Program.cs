@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OrderIntakeService.Messaging.Messages;
 
 namespace OrderProcessingDashboard
 {
@@ -8,6 +9,7 @@ namespace OrderProcessingDashboard
     {
         public static void Main(string[] args)
         {
+            Console.Title = "Orderprocessing Dashboard";
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -28,6 +30,7 @@ namespace OrderProcessingDashboard
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
                     var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    routing.RouteToEndpoint(typeof(GetRequestedOrders), "OrderIntakeService");
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing
                     // routing.RouteToEndpoint(typeof(MessageType), "DestinationEndpointForType");

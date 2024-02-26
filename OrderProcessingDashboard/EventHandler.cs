@@ -1,10 +1,11 @@
 using Microsoft.Extensions.Logging;
-using NServiceBus.Unicast.Transport;
-using OrderIntakeService.Model.Events;
+using OrderIntakeService.Messaging.Events;
+using OrderIntakeService.Messaging.Messages;
 
 namespace OrderProcessingDashboard
 {
-    public class EventHandler : IHandleMessages<RequestedOrderCollectionModifiedEvent>
+    public class EventHandler : IHandleMessages<RequestedOrderCollectionModifiedEvent>,
+                                IHandleMessages<GetRequestedOrdersResponse>
     {
         private readonly ILogger log;
 
@@ -15,13 +16,38 @@ namespace OrderProcessingDashboard
 
         public async Task Handle(RequestedOrderCollectionModifiedEvent message, IMessageHandlerContext context)
         {
-            log.LogInformation(message.Message, context);
+            Console.Clear();                      
+            GetRequestedOrders request = new GetRequestedOrders();
+            await context.Send(request);
+        }
 
-            // Sending commands: https://docs.particular.net/nservicebus/messaging/send-a-message#inside-the-incoming-message-processing-pipeline
-            // await context.Send(...);
+        public async Task Handle(GetRequestedOrdersResponse message, IMessageHandlerContext context)
+        {
+            Console.ResetColor();
+            var defColor = Console.ForegroundColor;
 
-            // Publishing events https://docs.particular.net/nservicebus/messaging/publish-subscribe/publish-handle-event
-            // await context.Publish(...);
+            foreach (var order in message.RequestedOrders)
+            {
+                if (order.IsImported)
+                    if (!order.IsNotified)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                    }
+                else if (order.HasImportError)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+                else
+                {
+                    Console.ForegroundColor = defColor;
+                }
+                Console.WriteLine($"{order.SalesOffice}|{order.IsImported}|{order.IsNotified}|{order.IsProcessingCompleted}|{order.CustomerId}|{order.ErpOrderId}|{order.ExternalOrderId}|{order.HasImportError}|{order.Error}");
+
+            }
         }
     }
 }

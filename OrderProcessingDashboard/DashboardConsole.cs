@@ -1,13 +1,5 @@
 ﻿using Microsoft.Extensions.Hosting;
-using NServiceBus;
 using NServiceBus.Logging;
-using OrderIntakeService.Model.Events;
-using OrderIntakeService.Model.Messages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OrderProcessingDashboard
 {

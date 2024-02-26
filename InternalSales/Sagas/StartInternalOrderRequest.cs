@@ -1,4 +1,4 @@
-﻿using OrderIntakeService.Model.Messages;
+﻿using OrderIntakeService.Messaging.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;

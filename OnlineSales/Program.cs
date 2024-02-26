@@ -2,7 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NServiceBus.Routing;
-using OrderIntakeService.Model.Messages;
+using OrderIntakeService.Messaging.Messages;
 
 namespace OnlineSales
 {
