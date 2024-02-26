@@ -1,0 +1,150 @@
+2024-02-22 15:40:59.7106|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:40:59.7979|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:41:01.2441|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:41:01.4463|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:41:01.5713|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:42:32.7342|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:42:32.8209|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:42:33.2444|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:42:33.2444|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:42:33.2915|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:44:55.7074|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:44:55.8299|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:44:56.3669|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:44:56.4159|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:44:56.4977|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:05.8936|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:05.9594|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:46:06.2690|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:46:06.2741|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:46:06.2948|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:22.2878|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:22.3528|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:46:22.6026|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:46:22.6026|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:46:22.6369|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:31.5936|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:31.6552|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:46:31.9185|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:46:31.9185|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:46:31.9489|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:55.7059|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:55.8015|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:46:56.1595|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:46:56.1741|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:46:56.2333|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:55:53.1855|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:55:53.3054|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:55:55.8582|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:55:55.9906|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:55:56.1082|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:58:58.9338|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:58:59.0122|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 15:58:59.3763|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 15:58:59.3937|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 15:58:59.4309|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 17:03:41.6477|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:03:41.7013|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 17:08:33.6515|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:08:33.7372|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 17:08:54.4438|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:08:54.5038|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 17:12:16.7315|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:12:16.8349|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 17:12:18.8185|1|Info|ServiceControl.Audit.Persistence.PersistenceManifestLibrary|Found persistence manifest for In-memory
+2024-02-22 17:12:18.9613|1|Info|ServiceControl.Audit.Infrastructure.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Audit Version:       5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period:             10.00:00:00
+Forwarding Audit Messages:          False
+ServiceControl Logging Level:       Info
+Transport Customization:            LearningTransport,
+Persistence Customization:          InMemory,
+Persistence:                        InMemory
+-------------------------------------------------------------
+2024-02-22 17:12:19.0098|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 17:17:10.6693|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:17:10.8027|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used
+2024-02-22 17:17:53.3220|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol-audit\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:17:53.3861|1|Info|ServiceControl.Audit.Infrastructure.Settings.Settings|No settings found for audit log queue to import, default name will be used

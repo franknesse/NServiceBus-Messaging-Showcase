@@ -1,0 +1,189 @@
+2024-02-22 15:40:58.3550|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:40:58.4113|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:40:59.4843|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:41:00.1038|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:41:00.5662|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:42:32.5934|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:42:32.6780|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:42:33.0283|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:42:33.3638|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:42:33.4211|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:44:55.7236|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:44:55.8274|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:44:56.3219|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:44:56.8610|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:44:56.9055|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:46:05.6568|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:05.7369|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:46:05.9125|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:46:06.2607|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:06.2897|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:46:22.0377|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:22.1278|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:46:22.2672|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:46:22.4824|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:22.5049|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:46:31.1956|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:31.2599|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:46:31.4165|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:46:31.7046|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:31.7358|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:46:55.4278|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:46:55.5635|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:46:55.8373|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:46:56.0867|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:46:56.1172|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 15:55:54.9722|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:55:55.0767|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:55:57.2609|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:58:58.3879|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 15:58:58.4751|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 15:58:58.7451|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 15:58:59.3976|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 15:58:59.8213|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 17:03:41.1349|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:03:41.1807|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 17:03:42.5944|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 17:08:33.0515|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:08:33.1447|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 17:08:33.8013|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 17:08:54.2739|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:08:54.3314|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 17:08:54.5127|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 17:12:16.4404|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:12:16.4921|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 17:12:18.0415|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 17:12:18.8425|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 17:12:19.2579|1|Info|ServiceControl.Persistence.PersistenceManifestLibrary|Found persistence manifest for RavenDB
+2024-02-22 17:17:08.6661|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:17:08.7768|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2024-02-22 17:17:10.8438|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             5.0.5+349569b57f59161b9594487f1bde7c7a845f6ba2
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+ServiceControl Logging Level:       Info
+Selected Transport Customization:   LearningTransport
+-------------------------------------------------------------
+2024-02-22 17:17:11.9926|1|Info|ServiceControl.Transports.TransportManifestLibrary|Found transport manifest for Learning Transport (Non-Production)
+2024-02-22 17:17:53.3220|1|Info|LoggingConfiguration|Logging to C:\Users\fn\source\repos\MessagingShowcase\.logs\servicecontrol\logfile.2024-02-22.txt with LogLevel 'Info'
+2024-02-22 17:17:53.3768|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used

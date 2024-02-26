@@ -1,7 +1,8 @@
+using InternalSales.Scheduler;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using OrderIntakeService.Model.Messages;
+using OrderIntakeService.Messaging.Messages;
 
 namespace InternalSales
 {
@@ -50,7 +51,8 @@ namespace InternalSales
 
                     return endpointConfiguration;
                 })
-                .ConfigureServices(c => c.AddHostedService<InternalOrderDesk>());
+                .ConfigureServices(c => c.AddHostedService<InternalOrderDesk>())
+                .ConfigureServices(c => c.AddSingleton<Schedular>());
         }
 
         static async Task OnCriticalError(ICriticalErrorContext context, CancellationToken cancellationToken)

@@ -1,5 +1,5 @@
 ﻿using NServiceBus.Logging;
-using OrderIntakeService.Model.Messages;
+using OrderIntakeService.Messaging.Messages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +16,8 @@ namespace InternalSales.Sagas
         public async Task Handle(StartInternalOrderRequest command, IMessageHandlerContext context)
         {
             this.Data.OrderId = command.OrderRequest.ExternalOrderId;
-            log.Info($"Starting new InternalOrderRequestPolicy for {command.OrderRequest.ExternalOrderId}");
+            this.Data.CustomerId = command.OrderRequest.CustomerId;
+            log.Info($"{DateTime.Now} - Starting new InternalOrderRequest: CustomerId={this.Data.CustomerId}, OrderId={command.OrderRequest.ExternalOrderId}");
             await context.Send(command.OrderRequest);
         }
 
@@ -39,5 +40,6 @@ namespace InternalSales.Sagas
     internal class InternalOrderRequestData : ContainSagaData
     {
         public string OrderId { get; set; }
+        public string CustomerId { get; set; }
     }
 }
