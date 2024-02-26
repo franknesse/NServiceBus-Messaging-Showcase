@@ -1,10 +1,10 @@
 using Microsoft.Extensions.Logging;
-using OrderIntakeService.Messaging.Events;
+using OrderIntakeService.Events;
 using OrderIntakeService.Messaging.Messages;
 
 namespace OrderProcessingDashboard
 {
-    public class EventHandler : IHandleMessages<RequestedOrderCollectionModifiedEvent>,
+    public class EventHandler : IHandleMessages<RequestedOrdersModified>,
                                 IHandleMessages<GetRequestedOrdersResponse>
     {
         private readonly ILogger log;
@@ -14,7 +14,7 @@ namespace OrderProcessingDashboard
             this.log = log;
         }
 
-        public async Task Handle(RequestedOrderCollectionModifiedEvent message, IMessageHandlerContext context)
+        public async Task Handle(RequestedOrdersModified message, IMessageHandlerContext context)
         {
             Console.Clear();                      
             GetRequestedOrders request = new GetRequestedOrders();

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrderIntakeService.Messaging.Events
+namespace OrderIntakeService.Events
 {
-    public class RequestedOrderCollectionModifiedEvent : IEvent
+    public class RequestedOrdersModified : IEvent
     {        
     }
 }

@@ -1,6 +1,6 @@
 ﻿using NServiceBus.Logging;
 using OrderIntakeService.DTO;
-using OrderIntakeService.Messaging.Events;
+using OrderIntakeService.Events;
 using OrderIntakeService.Messaging.Messages;
 using OrderIntakeService.Repos;
 using System;
@@ -40,7 +40,7 @@ namespace OrderIntakeService
                 IsSuccess = true
             };
             await context.Reply(response).ConfigureAwait(false);
-            RequestedOrderCollectionModifiedEvent ev = new RequestedOrderCollectionModifiedEvent();            
+            RequestedOrdersModified ev = new RequestedOrdersModified();            
             await context.Publish(ev).ConfigureAwait(false);
         }       
 
