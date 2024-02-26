@@ -33,7 +33,10 @@ namespace InternalSales
                     var endpointConfiguration = new EndpointConfiguration("InternalSales");
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
-                    var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    var azsbcs = config.GetValue<string>("AzureServiceBusConnectionString");
+                    AzureServiceBusTransport tp = new AzureServiceBusTransport(azsbcs);
+                    //var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    var routing = endpointConfiguration.UseTransport(tp);
                     routing.RouteToEndpoint(typeof(OrderRequest), "OrderIntakeService");
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing

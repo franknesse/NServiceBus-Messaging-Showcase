@@ -34,7 +34,10 @@ namespace OrderIntakeService
                     var endpointConfiguration = new EndpointConfiguration("OrderIntakeService");
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
-                    var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    var azsbcs = config.GetValue<string>("AzureServiceBusConnectionString");
+                    AzureServiceBusTransport tp = new AzureServiceBusTransport(azsbcs);
+                    //var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    var routing = endpointConfiguration.UseTransport(tp);
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing
                     // routing.RouteToEndpoint(typeof(MessageType), "DestinationEndpointForType");
