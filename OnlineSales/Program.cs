@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -9,13 +10,15 @@ namespace OnlineSales
     internal static class Program
     {
         public static void Main(string[] args)
-        {
-            Console.Title = "OnlineSales";
+        {            
             CreateHostBuilder(args).Build().Run();            
         }
 
         static IHostBuilder CreateHostBuilder(string[] args)
         {
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json");
+            var config = configuration.Build();
+            Console.Title = config.GetValue<string>("ConsoleTitle");
             return Host.CreateDefaultBuilder(args)
                 .UseConsoleLifetime()
                 .ConfigureLogging(logging =>

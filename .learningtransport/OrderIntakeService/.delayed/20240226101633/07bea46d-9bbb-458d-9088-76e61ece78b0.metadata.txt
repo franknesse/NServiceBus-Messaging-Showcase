@@ -1,0 +1,18 @@
+{
+  "NServiceBus.MessageId": "c7b170c0-29dc-4a33-b897-b12200a90c02",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.RelatedTo": "633cb199-71bb-4ed3-9bc2-b12200a90bea",
+  "NServiceBus.ConversationId": "50e08bea-3b25-4f43-820c-b12200a90bd9",
+  "NServiceBus.CorrelationId": "983da9b7-4673-45ad-8c78-b12200a90bd8",
+  "NServiceBus.ReplyToAddress": "OrderProcessingDashboard",
+  "NServiceBus.OriginatingMachine": "NLDEL-S5760",
+  "NServiceBus.OriginatingEndpoint": "OrderProcessingDashboard",
+  "$.diagnostics.originating.hostid": "95d2408e9e609d38a9914272039df4ab",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "OrderIntakeService.Messaging.Messages.GetRequestedOrders, OrderIntakeService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "8.1.1",
+  "NServiceBus.TimeSent": "2024-02-26 10:15:28:857556 Z",
+  "NServiceBus.Retries": "3",
+  "NServiceBus.Retries.Timestamp": "2024-02-26 10:16:02:436167 Z",
+  "NServiceBus.DeliverAt": "2024-02-26 10:15:39:029587 Z"
+}

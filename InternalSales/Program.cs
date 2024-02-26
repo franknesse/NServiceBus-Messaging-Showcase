@@ -1,4 +1,5 @@
 using InternalSales.Scheduler;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -10,12 +11,14 @@ namespace InternalSales
     {
         public static void Main(string[] args)
         {
-            Console.Title = "Internal Sales";
             CreateHostBuilder(args).Build().Run();
         }
 
         static IHostBuilder CreateHostBuilder(string[] args)
         {
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json");
+            var config = configuration.Build();
+            Console.Title = config.GetValue<string>("ConsoleTitle");
             return Host.CreateDefaultBuilder(args)
                 .UseConsoleLifetime()
                 .ConfigureLogging(logging =>
