@@ -33,6 +33,14 @@ class Program
 
                 #region asb-bridge-configuration
                 var asbBridgeTransport = new BridgeTransport(new AzureServiceBusTransport(azsbcs));
+                asbBridgeTransport.HasEndpoint("Particular.MyServiceControl");
+                asbBridgeTransport.HasEndpoint("Particular.Monitoring");
+                asbBridgeTransport.HasEndpoint("error");
+                asbBridgeTransport.SendHeartbeatTo(
+    serviceControlQueue: "Particular.MyServiceControl",
+    frequency: TimeSpan.FromSeconds(15),
+    timeToLive: TimeSpan.FromSeconds(30));
+
                 asbBridgeTransport.AutoCreateQueues = true;
                 asbBridgeTransport.HasEndpoint(orderIntakeServiceBridgeEndpoint);
                 bridgeConfiguration.AddTransport(asbBridgeTransport);
@@ -48,8 +56,15 @@ class Program
 
                 #region msmq-bridge-configuration
                 var learningBridgeTransport = new BridgeTransport(new LearningTransport());
+                //learningBridgeTransport.HasEndpoint("Particular.ServiceControl");
+                //learningBridgeTransport.HasEndpoint("Particular.Monitoring");
+                //learningBridgeTransport.HasEndpoint("error");
                 learningBridgeTransport.AutoCreateQueues = true;
                 learningBridgeTransport.HasEndpoint(dashBoardBridgeEndpoint);
+                learningBridgeTransport.SendHeartbeatTo(
+    serviceControlQueue: "Particular.MyServiceControl",
+    frequency: TimeSpan.FromSeconds(15),
+    timeToLive: TimeSpan.FromSeconds(30));
                 bridgeConfiguration.AddTransport(learningBridgeTransport);
                 #endregion
             })

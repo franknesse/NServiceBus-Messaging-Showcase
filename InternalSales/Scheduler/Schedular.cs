@@ -1,4 +1,5 @@
 ﻿using InternalSales.Sagas;
+using NServiceBus.Logging;
 using OrderIntakeService.Messaging.Messages;
 
 namespace InternalSales.Scheduler
@@ -7,36 +8,45 @@ namespace InternalSales.Scheduler
     {
         private IMessageSession _session;
         private bool _enabled = false;
+        private static ILog _log;
 
         public Schedular(IMessageSession session)
         {
             this._session = session;            
+            _log = LogManager.GetLogger<Schedular>();
         }
 
         public bool IsRunning { get { return _enabled; } }
 
         public void Start()
         {
-            _enabled = true;
-            RunSchedule(_enabled);
+            RunSchedule(true);
         }
 
         public void Stop()
         {
-            _enabled = false;
-            RunSchedule(_enabled);
+            RunSchedule(false);
         }
 
         public void Toggle()
         {
-            _enabled = !_enabled;
-            RunSchedule(_enabled);
+            bool enabled = !IsRunning;
+            RunSchedule(enabled);
         }
 
 
         private async void RunSchedule(bool enabled)
         {
-            while (enabled)
+            _enabled = enabled;
+            if (enabled)
+            {
+                _log.Info("Enabling automatic order creation");
+            }
+            else
+            {
+                _log.Info("Disabling automatic order creation");
+            }
+            while (_enabled)
             {
                 Random rnd = new Random();
                 int sleep = rnd.Next(1000, 10000);

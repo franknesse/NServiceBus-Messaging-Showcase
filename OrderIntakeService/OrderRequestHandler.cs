@@ -24,10 +24,12 @@ namespace OrderIntakeService
         static ILog log = LogManager.GetLogger(typeof(OrderRequestHandler));
         public async Task Handle(OrderRequest message, IMessageHandlerContext context)
         {
-            log.Info($"{DateTime.Now} - Received order request for {message.ExternalOrderId}.");
+            log.Info($"{DateTime.Now} - Received order request for {message.SalesOffice}/{message.ExternalOrderId}.");
             OrderRequestResponse response = ValidateRequest(message);
             if (response.IsSuccess)
             {
+                log.Info($"Order request for {message.SalesOffice}/{message.ExternalOrderId} successfully validated");
+                //log.Info($"Order request for {message.SalesOffice}/{message.ExternalOrderId} successfully validated");
                 RequestedOrderDto newOrder = new RequestedOrderDto()
                 {
                     CustomerId = message.CustomerId,
@@ -36,10 +38,15 @@ namespace OrderIntakeService
                     SalesOffice = message.SalesOffice
                 };
                 _orderRepository.Add(newOrder);
+                RequestedOrdersModified ev = new RequestedOrdersModified();
+                await context.Publish(ev).ConfigureAwait(false);
             }
-            await context.Reply(response).ConfigureAwait(false);
-            RequestedOrdersModified ev = new RequestedOrdersModified();
-            await context.Publish(ev).ConfigureAwait(false);
+            else 
+            {
+                log.Warn($"Order request for {message.SalesOffice}/{message.ExternalOrderId} cannot be accepted");
+                log.Warn($"{response.ErrorInfo}");
+            }
+            await context.Reply(response).ConfigureAwait(false);            
         }
 
         private OrderRequestResponse ValidateRequest(OrderRequest message)

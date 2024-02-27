@@ -1,9 +1,0 @@
-{
-  "NServiceBus.OriginatingEndpoint": "OrderProcessingDashboard",
-  "NServiceBus.OriginatingMachine": "NLDEL-S5760",
-  "$.diagnostics.originating.hostid": "95d2408e9e609d38a9914272039df4ab",
-  "$.diagnostics.hostdisplayname": "NLDEL-S5760",
-  "NServiceBus.EnclosedMessageTypes": "NServiceBus.Metrics.EndpointMetadataReport",
-  "NServiceBus.ContentType": "application\/json",
-  "NServiceBus.Transport.Learning.TimeToBeReceived": "7.00:00:00"
-}
