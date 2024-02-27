@@ -32,7 +32,9 @@ namespace OrderProcessingDashboard
                     var endpointConfiguration = new EndpointConfiguration("OrderProcessingDashboard");
 
                     // Learning Transport: https://docs.particular.net/transports/learning/
-                    var routing = endpointConfiguration.UseTransport(new LearningTransport());
+                    var transport = endpointConfiguration.UseTransport<LearningTransport>();
+                    transport.NoPayloadSizeRestriction();
+                    var routing = endpointConfiguration.UseTransport(transport.Transport);
                     routing.RouteToEndpoint(typeof(GetRequestedOrders), "OrderIntakeService");
 
                     // Define routing for commands: https://docs.particular.net/nservicebus/messaging/routing#command-routing

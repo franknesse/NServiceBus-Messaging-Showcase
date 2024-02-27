@@ -24,11 +24,11 @@ namespace InternalSales
         protected override async Task ExecuteAsync(CancellationToken cancellationToken)
         {            
             try
-            {                
-                _schedular.RunSchedule();
+            {   
                 while (!cancellationToken.IsCancellationRequested)
                 {                    
-                    Console.WriteLine("Press A to send a message");
+                    Console.WriteLine("Press A to submit an order to the OrderIntakeService");
+                    Console.WriteLine("Press B to toggle automatic order creation");
                     var userInput = Console.ReadKey();
                     switch (userInput.Key)
                     {
@@ -48,6 +48,12 @@ namespace InternalSales
                                 await _messageSession.SendLocal(command);
                                 break;
                             }
+                        case ConsoleKey.B:
+                            {
+                                Console.WriteLine("Toggle order creation job (for demo)");
+                                _schedular.Toggle();
+                                break;
+                            }
                     }
                 }
             }
@@ -55,27 +61,5 @@ namespace InternalSales
             {
             }
         }
-
-        private async void StartSchedules()
-        {
-            await _messageSession.ScheduleEvery(
-        timeSpan: TimeSpan.FromSeconds(5),
-        task: pipelineContext =>
-        {
-            OrderRequest orderRequest = new OrderRequest()
-            {
-                CustomerId = Guid.NewGuid().ToString().Substring(0, 5),
-                ExternalOrderId = Guid.NewGuid().ToString().Substring(0, 5),
-                OrderDetails = String.Empty,
-                SalesOffice = "RBR"
-            };
-            var message = new StartInternalOrderRequest()
-            {
-                OrderRequest = orderRequest
-            };
-            return pipelineContext.SendLocal(message);
-        });
-        }
-
     }
 }

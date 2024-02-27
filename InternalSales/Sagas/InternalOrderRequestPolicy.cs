@@ -23,7 +23,23 @@ namespace InternalSales.Sagas
 
         public Task Handle(OrderRequestResponse message, IMessageHandlerContext context)
         {
-            log.Info($"Handling response for RequestId={message.ExternalOrderId}");
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Handling OrderRequestResponse from OrderIntakeService");
+            sb.AppendLine($"SalesOffice: {message.SalesOffice}");
+            sb.AppendLine($"OrderId    : {message.ExternalOrderId}");
+            sb.AppendLine($"Success?   : {message.IsSuccess}");
+
+            if (!message.IsSuccess)
+            {
+                sb.AppendLine($"Error      : {message.ErrorInfo}");
+                this.MarkAsComplete();
+                sb.AppendLine("OrderRequestSaga marked as completed");
+                log.Warn(sb.ToString());
+            }
+            else
+            {
+                log.Info(sb.ToString());
+            }
             return Task.CompletedTask;
         }
 

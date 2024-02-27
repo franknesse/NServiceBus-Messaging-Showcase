@@ -18,5 +18,10 @@ namespace OrderIntakeService.Repos
         {
             requestedOrders.Add(requestedOrder);
         }
+
+        internal RequestedOrderDto GetOrder(string salesOffice, string externalOrderId)
+        {
+            return requestedOrders.FirstOrDefault(x => x.SalesOffice == salesOffice && x.ExternalOrderId == externalOrderId); 
+        }
     }
 }

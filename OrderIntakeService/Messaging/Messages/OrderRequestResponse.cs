@@ -9,7 +9,9 @@ namespace OrderIntakeService.Messaging.Messages
 {
     public class OrderRequestResponse : IMessage
     {
-        public string ExternalOrderId { get; set; }        
+        public string ExternalOrderId { get; set; }
+        public string SalesOffice { get; set; }
+
         public bool IsSuccess { get; set; }
         public string ErrorInfo { get; set; }
     }

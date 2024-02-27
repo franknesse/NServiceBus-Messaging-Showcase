@@ -1,4 +1,5 @@
-﻿using NServiceBus.Logging;
+﻿using Microsoft.Extensions.Options;
+using NServiceBus.Logging;
 using OrderIntakeService.DTO;
 using OrderIntakeService.Events;
 using OrderIntakeService.Messaging.Messages;
@@ -24,25 +25,74 @@ namespace OrderIntakeService
         public async Task Handle(OrderRequest message, IMessageHandlerContext context)
         {
             log.Info($"{DateTime.Now} - Received order request for {message.ExternalOrderId}.");
-            RequestedOrderDto newOrder = new RequestedOrderDto()
+            OrderRequestResponse response = ValidateRequest(message);
+            if (response.IsSuccess)
             {
-                CustomerId = message.CustomerId,
-                ExternalOrderId = message.ExternalOrderId,
-                OrderDetails = message.OrderDetails,
-                SalesOffice = message.SalesOffice
-            };
-            _orderRepository.Add(newOrder);
-
-            var response = new OrderRequestResponse()
-            {
-                ExternalOrderId = message.ExternalOrderId,
-                ErrorInfo = "",
-                IsSuccess = true
-            };
+                RequestedOrderDto newOrder = new RequestedOrderDto()
+                {
+                    CustomerId = message.CustomerId,
+                    ExternalOrderId = message.ExternalOrderId,
+                    OrderDetails = message.OrderDetails,
+                    SalesOffice = message.SalesOffice
+                };
+                _orderRepository.Add(newOrder);
+            }
             await context.Reply(response).ConfigureAwait(false);
-            RequestedOrdersModified ev = new RequestedOrdersModified();            
+            RequestedOrdersModified ev = new RequestedOrdersModified();
             await context.Publish(ev).ConfigureAwait(false);
-        }       
+        }
+
+        private OrderRequestResponse ValidateRequest(OrderRequest message)
+        {
+            StringBuilder sb = new StringBuilder();
+            if (String.IsNullOrEmpty(message.CustomerId))
+            {
+                sb.AppendLine("Customer Id missing");
+            }
+
+            if (String.IsNullOrEmpty(message.SalesOffice))
+            {
+                sb.AppendLine("SalesOffice missing");
+            }
+
+            if (String.IsNullOrEmpty(message.ExternalOrderId))
+            {
+                sb.AppendLine("ExternalOrderId missing");
+            }
+            if (sb.ToString() != String.Empty)
+            {
+                return new OrderRequestResponse()
+                {
+                    ErrorInfo = sb.ToString(),
+                    ExternalOrderId = message.ExternalOrderId,
+                    SalesOffice = message.SalesOffice,
+                    IsSuccess = false
+                };
+            }
+
+            RequestedOrderDto existingOrder = _orderRepository.GetOrder(message.SalesOffice, message.ExternalOrderId);
+            if (existingOrder != null)
+            {
+                return new OrderRequestResponse()
+                {
+                    ErrorInfo = $"Order {message.ExternalOrderId} for salesoffice {message.SalesOffice} already exists",
+                    ExternalOrderId = message.ExternalOrderId,
+                    SalesOffice = message.SalesOffice,
+                    IsSuccess = false
+                };
+            }
+            else
+            {
+                return new OrderRequestResponse()
+                {
+                    ErrorInfo = "",
+                    ExternalOrderId = message.ExternalOrderId,
+                    SalesOffice = message.SalesOffice,
+                    IsSuccess = true
+                };
+            }
+        }
+
 
         public async Task Handle(GetRequestedOrders message, IMessageHandlerContext context)
         {

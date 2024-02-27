@@ -1,28 +1,42 @@
 ﻿using InternalSales.Sagas;
-using Microsoft.Extensions.Hosting;
-using NServiceBus;
 using OrderIntakeService.Messaging.Messages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace InternalSales.Scheduler
 {
     public class Schedular
     {
         private IMessageSession _session;
+        private bool _enabled = false;
 
         public Schedular(IMessageSession session)
         {
-            this._session = session;
+            this._session = session;            
         }
 
-        public async void RunSchedule()
+        public bool IsRunning { get { return _enabled; } }
+
+        public void Start()
         {
-            while (true)
+            _enabled = true;
+            RunSchedule(_enabled);
+        }
+
+        public void Stop()
+        {
+            _enabled = false;
+            RunSchedule(_enabled);
+        }
+
+        public void Toggle()
+        {
+            _enabled = !_enabled;
+            RunSchedule(_enabled);
+        }
+
+
+        private async void RunSchedule(bool enabled)
+        {
+            while (enabled)
             {
                 Random rnd = new Random();
                 int sleep = rnd.Next(1000, 10000);
